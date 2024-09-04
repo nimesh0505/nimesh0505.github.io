@@ -1,42 +1,138 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
-header {
-    background-color: #007acc;
-    color: white;
-    padding: 20px;
-    text-align: center;
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h2 {
-    color: #007acc;
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-ul {
-    list-style-type: none;
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
-li {
-    margin: 5px 0;
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header {
+    height: 100vh;
+    background: #007acc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    background: #fff;
+    color: #007acc;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 20px;
+    background: #fff;
+    margin-top: 60px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.timeline {
+    margin-top: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+    color: #007acc;
+    margin-bottom: 5px;
+}
+
+.timeline-item span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project h3 {
+    color: #007acc;
+    margin-bottom: 10px;
 }
 
 footer {
+    background: #333;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #007acc;
-    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
 }
